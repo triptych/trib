@@ -7,8 +7,13 @@
     },
     "_simple_view": {
         "verbs": ["get"],
-        "path": "/",
+        "path": "/simple",
         "call": "simple.index"
+    },
+    "_gallery_view": {
+        "verbs": ["get"],
+        "path": "/",
+        "call": "gallery.index"
     }
 
 }]

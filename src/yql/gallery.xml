@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+    <meta>
+        <author></author>
+        <description>Gallery table</description>
+        <documentationURL></documentationURL>
+        <sampleQuery>select * from {table} where name="all"</sampleQuery>
+        <apiKeyURL></apiKeyURL>
+    </meta>
+    <bindings>
+        <select itemPath="json" produces="JSON">
+            <urls>
+                <url>http://yuilibrary.com/api/v1/gallery/{name}</url>
+            </urls>
+            <inputs>
+                <key id="name" type="xs:string" paramType="path" />
+            </inputs>
+        </select>
+     </bindings>
+</table>

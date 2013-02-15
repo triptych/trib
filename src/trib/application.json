@@ -24,6 +24,9 @@
             },
             "simple": {
                 "type": "simple"
+            },
+            "gallery": {
+                "type": "gallery"
             }
         }
     },

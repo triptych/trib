@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Trib</title>
+        <style>
+            .module span {
+                border: 1px solid #000;
+            }
+        </style>
+        <script src="http://yui.yahooapis.com/3.8.1/build/yui/yui-min.js"></script>
+
+        <script>
+        // Create a YUI sandbox on your page.
+        YUI().use('node', 'event', 'yql', function (Y) {
+            // The Node and Event modules are loaded and ready to use.
+            // Your code goes here!
+
+            Y.on("domready", function(e){
+                Y.log("ready!");
+                var statement = 'use "store://iT35XjAki8sOnIRrQ9mKYH" as yahoo.awooldri.yuilib.gallery; select modules from yahoo.awooldri.yuilib.gallery where name="all"';
+
+                Y.YQL(statement, function(data){
+                    Y.log(data);
+                    //for(i=0; i< data.results.json.length; i++){
+                    //    Y.one("#output").append("<div> Module: <span>" + "</div>")
+                    //}
+
+                    Y.Array.each(data.query.results.json, function(item,idx,array){
+                        Y.one("#output").append("<div class='module'>Module <span>"+item.modules.module+"</span></div>");
+                    })
+
+                });
+
+
+            })
+        });
+</script>
+
+
+
+    </head>
+    <body>
+        <section>
+            <div>Gallery modules</div>
+            <div id="output"></div>
+        </section>
+    </body>
+</html>
