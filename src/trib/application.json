@@ -28,12 +28,39 @@
             "gallery": {
                 "type": "gallery"
             },
-            "frame": {
+            "tribframe": {
                 "type": "HTMLFrameMojit",
                 "config": {
+                    "deploy": true,
                     "title": "Trib - Contribute to the Tribe",
                     "child": {
-                        "type": "simple"
+                        "type": "FrameMojit",
+                        "config": {
+                            "children": {
+                                "header": {
+                                    "type": "HeaderMojit"
+                                },
+                                "body": {
+                                    "type": "BodyMojit"
+                                },
+                                "footer": {
+                                    "type": "FooterMojit"
+                                }
+                            }
+                        }
+                    },
+                    "assets": {
+                        "top": {
+                            "css": [
+                                "http://necolas.github.com/normalize.css/1.0.2/normalize.css",
+                                "http://yui.yahooapis.com/3.9.0pr1/build/cssgrids-responsive/cssgrids-responsive-min.css",
+                                "http://yui.yahooapis.com/3.8.0/build/cssbutton/cssbutton-min.css",
+                                "https://rawgithub.com/tilomitra/csslist/master/css/list-core.css",
+                                "https://rawgithub.com/tilomitra/csslist/master/css/list.css",
+                                "https://rawgithub.com/tilomitra/csslist/master/css/list-responsive.css",
+                                "https://rawgithub.com/tilomitra/yuicss-common/master/ui.css"
+                            ]
+                        }
                     }
                 }
             }

@@ -10,10 +10,25 @@
         "path": "/simple",
         "call": "simple.index"
     },
-    "_simple_view_2": {
+    "root": {
         "verbs": ["get"],
         "path": "/",
-        "call": "frame.index"
+        "call": "tribframe.index"
+    },
+    "header": {
+        "verbs":["get"],
+        "path": "/header",
+        "call": "header.index"
+    },
+    "body": {
+        "verbs": ["get"],
+        "path": "/body",
+        "call": "body.index"
+    },
+    "footer": {
+        "verbs": ["get"],
+        "path": "/footer",
+        "call": "footer.index"
     }
 
 }]
