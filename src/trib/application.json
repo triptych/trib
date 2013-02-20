@@ -27,6 +27,15 @@
             },
             "gallery": {
                 "type": "gallery"
+            },
+            "frame": {
+                "type": "HTMLFrameMojit",
+                "config": {
+                    "title": "Trib - Contribute to the Tribe",
+                    "child": {
+                        "type": "simple"
+                    }
+                }
             }
         }
     },

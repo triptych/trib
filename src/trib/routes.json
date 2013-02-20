@@ -10,10 +10,10 @@
         "path": "/simple",
         "call": "simple.index"
     },
-    "_gallery_view": {
+    "_simple_view_2": {
         "verbs": ["get"],
         "path": "/",
-        "call": "gallery.index"
+        "call": "frame.index"
     }
 
 }]
