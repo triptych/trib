@@ -47,6 +47,11 @@ YUI.add('FrameMojitBinderIndex', function(Y, NAME) {
              *
              * });
              */
+
+             Y.log("bind called");
+             Y.on("domready", function(){
+                Y.one("body").addClass("yui3-skin-sam");
+             });
         }
 
     };
