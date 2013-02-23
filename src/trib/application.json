@@ -2,6 +2,15 @@
     {
         "settings": [ "master" ],
         "appPort": "8666",
+        "yui":{
+          "config": {
+            "seed": [
+              "http://yui.yahooapis.com/combo?3.8.1/yui-base/yui-base-min.js&3.8.1/loader-base/loader-base-min.js&3.8.1/loader-yui3/loader-yui3-min.js",
+              "loader-app",
+              "loader-app-base{langPath}"
+            ]
+          }            
+            },
         "specs": {
             "master": {
                 "type": "Weather"
@@ -55,13 +64,16 @@
                                 "http://necolas.github.com/normalize.css/1.0.2/normalize.css",
                                 "https://rawgithub.com/tilomitra/cssforms/master/css/forms.css",
                                 "https://rawgithub.com/tilomitra/cssforms/master/css/forms-responsive.css",
-                                "http://tilomitra.github.com/cssforms/assets/grids-responsive.css",
+                                "http://yui.yahooapis.com/3.9.0pr3/build/cssgrids-responsive/cssgrids-responsive-min.css",
                                 "http://yui.yahooapis.com/3.8.0/build/cssbutton/cssbutton-min.css",
                                 "https://rawgithub.com/tilomitra/csslist/master/css/list-core.css",
                                 "https://rawgithub.com/tilomitra/csslist/master/css/list.css",
                                 "https://rawgithub.com/tilomitra/csslist/master/css/list-responsive.css",
-                                "https://rawgithub.com/tilomitra/yuicss-common/master/ui.css"
+                                "https://rawgithub.com/tilomitra/csslist/master/css/list-paginator.css",
+                                "https://rawgithub.com/tilomitra/yuicss-common/master/ui.css",
+                                "/static/trib/assets/trib.css"
                             ]
+
                         }
                     }
                 }

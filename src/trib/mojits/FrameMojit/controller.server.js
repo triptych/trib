@@ -26,7 +26,7 @@ YUI.add('FrameMojit', function(Y, NAME) {
          */
         index: function(ac) {
             ac.composite.done({
-                title: "Parent Frame (FrameMojit)"
+                title: "Trib - Contribute to the Tribe"
             });
         }
 

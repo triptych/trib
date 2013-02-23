@@ -22,8 +22,23 @@ YUI.add('BodyMojit', function(Y, NAME) {
          *        to the Mojito API.
          */
         index: function(ac) {
-            ac.done({
-                title: "Body"
+        Y.log("BodyMojit - controller.server.js index called");
+
+         //   ac.done({
+         //       title: ""
+         //   });
+
+            var model = ac.models.get('StatsModelYQL');
+            Y.log(model);
+            model.getData({}, function(data){
+                Y.log("bodymojit -index - model.getData:");
+                Y.log(data);
+
+                ac.done({
+                    title: "",
+                    watchers: data.watchers,
+                    forks: data.forks
+                });
             });
         }
 

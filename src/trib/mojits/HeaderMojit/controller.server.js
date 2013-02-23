@@ -23,7 +23,7 @@ YUI.add('HeaderMojit', function(Y, NAME) {
          */
         index: function(ac) {
             ac.done({
-                title: "Header - HeaderMojit"
+                title: ""
             });
         }
 
