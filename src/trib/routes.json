@@ -1,15 +1,5 @@
 [{
     "settings": [ "master" ],
-    "homepage": {
-        "verb":["get"],
-        "path": "/homepage",
-        "call": "htmlframe.index"
-    },
-    "_simple_view": {
-        "verbs": ["get"],
-        "path": "/simple",
-        "call": "simple.index"
-    },
     "root": {
         "verbs": ["get"],
         "path": "/",
