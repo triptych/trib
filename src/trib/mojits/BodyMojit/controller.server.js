@@ -30,7 +30,7 @@ YUI.add('BodyMojit', function(Y, NAME) {
 
 
             ac.composite.done({
-                title: "Trib - Contribute to the Tribe body"
+                title: "body content"
             });
    
 
