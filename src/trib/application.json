@@ -28,7 +28,14 @@
                                     "type": "HeaderMojit"
                                 },
                                 "body": {
-                                    "type": "BodyMojit"
+                                    "type": "BodyMojit",
+                                    "config": {
+                                        "children": {
+                                            "github": {
+                                                "type":"githubMojit"
+                                            }
+                                        }
+                                    }
                                 },
                                 "footer": {
                                     "type": "FooterMojit"

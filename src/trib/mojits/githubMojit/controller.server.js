@@ -1,10 +1,10 @@
 /*jslint anon:true, sloppy:true, nomen:true*/
-YUI.add('BodyMojit', function(Y, NAME) {
+YUI.add('githubMojit', function(Y, NAME) {
 
 /**
- * The BodyMojit module.
+ * The githubMojit module.
  *
- * @module BodyMojit
+ * @module githubMojit
  */
 
     /**
@@ -22,23 +22,24 @@ YUI.add('BodyMojit', function(Y, NAME) {
          *        to the Mojito API.
          */
         index: function(ac) {
-        Y.log("BodyMojit - controller.server.js index called");
-
-         //   ac.done({
-         //       title: ""
-         //   });
-
-
-            ac.composite.done({
-                title: "Trib - Contribute to the Tribe body"
+            /**
+            ac.models.get('githubMojitModelFoo').getData(function(err, data) {
+                if (err) {
+                    ac.error(err);
+                    return;
+                }
+                ac.assets.addCss('./index.css');
+                ac.done({
+                    status: 'Mojito is working.',
+                    data: data
+                });
             });
-   
+**/
 
-/**
             var model = ac.models.get('StatsModelYQL');
             Y.log(model);
             model.getData({}, function(data){
-                Y.log("bodymojit -index - model.getData:");
+                Y.log("githubmojit -index - model.getData:");
                 Y.log(data);
 
                 ac.done({
@@ -47,9 +48,8 @@ YUI.add('BodyMojit', function(Y, NAME) {
                     forks: data.forks
                 });
             });
-**/
         }
 
     };
 
-}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'BodyMojitModelFoo','mojito-composite-addon']});
+}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'githubMojitModelFoo']});
