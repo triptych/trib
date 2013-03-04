@@ -30,7 +30,7 @@ YUI.add('BodyMojit', function(Y, NAME) {
 
 
             ac.composite.done({
-                title: "body content"
+                title: "Statistics for YUI"
             });
    
 

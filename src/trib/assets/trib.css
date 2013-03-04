@@ -1,5 +1,6 @@
 body {
     background-color: #F8F8F8;
+    padding-left: 8px;
 }
 
 div {
@@ -29,4 +30,8 @@ div {
 
 .myfooter {
     clear: left;
+}
+
+.bodytext {
+    padding-left: 4px;
 }

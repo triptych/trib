@@ -23,7 +23,7 @@ YUI.add('FooterMojit', function(Y, NAME) {
          */
         index: function(ac) {
             ac.done({
-                title: "[footer]"
+                title: "Copyright 2013 Yahoo! Inc."
             });
         }
 
