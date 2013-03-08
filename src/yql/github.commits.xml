@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+  <meta>
+    <author>Andrew Wooldridge</author>
+    <documentationURL>Get commits from a given repo.</documentationURL>
+    <sampleQuery>select * from {table} where id='yui' and repo='yui3' </sampleQuery>
+  </meta>
+  <bindings>
+    <select itemPath="json" produces="JSON">
+      <urls>
+        <url>https://api.github.com/repos/{id}/{repo}/commits</url>
+      </urls>
+      <inputs>
+        <key id="id" type="xs:string" paramType="path" required="true"/>
+        <key id="repo" type="xs:string" paramType="path" required="true"/>
+      </inputs>
+    </select>
+  </bindings>
+</table>

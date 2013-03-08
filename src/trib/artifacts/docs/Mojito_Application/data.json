@@ -1,0 +1,195 @@
+{
+    "project": {},
+    "files": {
+        "/MyHome/repos/personal/trib/src/trib/mojits/Weather/models/foo.server.js": {
+            "name": "/MyHome/repos/personal/trib/src/trib/mojits/Weather/models/foo.server.js",
+            "modules": {
+                "Weather": 1
+            },
+            "classes": {
+                "WeatherModelFoo": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "/MyHome/repos/personal/trib/src/trib/mojits/Weather/controller.server.js": {
+            "name": "/MyHome/repos/personal/trib/src/trib/mojits/Weather/controller.server.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "/MyHome/repos/personal/trib/src/trib/mojits/testing/models/foo.server.js": {
+            "name": "/MyHome/repos/personal/trib/src/trib/mojits/testing/models/foo.server.js",
+            "modules": {
+                "testing": 1
+            },
+            "classes": {
+                "testingModelFoo": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "/MyHome/repos/personal/trib/src/trib/mojits/testing/controller.server.js": {
+            "name": "/MyHome/repos/personal/trib/src/trib/mojits/testing/controller.server.js",
+            "modules": {},
+            "classes": {
+                "Controller": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Weather": {
+            "name": "Weather",
+            "submodules": {},
+            "classes": {
+                "WeatherModelFoo": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "/MyHome/repos/personal/trib/src/trib/mojits/Weather/models/foo.server.js",
+            "line": 10,
+            "description": "The WeatherModelFoo module."
+        },
+        "testing": {
+            "name": "testing",
+            "submodules": {},
+            "classes": {
+                "Controller": 1,
+                "testingModelFoo": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "/MyHome/repos/personal/trib/src/trib/mojits/testing/models/foo.server.js",
+            "line": 10,
+            "description": "The testingModelFoo module."
+        }
+    },
+    "classes": {
+        "WeatherModelFoo": {
+            "name": "WeatherModelFoo",
+            "shortname": "WeatherModelFoo",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Weather",
+            "namespace": "",
+            "file": "/MyHome/repos/personal/trib/src/trib/mojits/Weather/models/foo.server.js",
+            "line": 10,
+            "description": "Constructor for the WeatherModelFoo class.",
+            "is_constructor": 1
+        },
+        "Controller": {
+            "name": "Controller",
+            "shortname": "Controller",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "testing",
+            "namespace": "",
+            "file": "/MyHome/repos/personal/trib/src/trib/mojits/testing/controller.server.js",
+            "line": 10,
+            "description": "Constructor for the Controller class.",
+            "is_constructor": 1
+        },
+        "testingModelFoo": {
+            "name": "testingModelFoo",
+            "shortname": "testingModelFoo",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "testing",
+            "namespace": "",
+            "file": "/MyHome/repos/personal/trib/src/trib/mojits/testing/models/foo.server.js",
+            "line": 10,
+            "description": "Constructor for the testingModelFoo class.",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "/MyHome/repos/personal/trib/src/trib/mojits/Weather/models/foo.server.js",
+            "line": 22,
+            "description": "Method that will be invoked by the mojit controller to obtain data.",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "The callback function to call when the\n       data has been retrieved.",
+                    "type": "Function(err,data)"
+                }
+            ],
+            "class": "WeatherModelFoo",
+            "module": "Weather"
+        },
+        {
+            "file": "/MyHome/repos/personal/trib/src/trib/mojits/Weather/controller.server.js",
+            "line": 18,
+            "description": "Method corresponding to the 'index' action.",
+            "params": [
+                {
+                    "name": "ac",
+                    "description": "The ActionContext that provides access\n       to the Mojito API.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Controller",
+            "module": "Weather"
+        },
+        {
+            "file": "/MyHome/repos/personal/trib/src/trib/mojits/testing/models/foo.server.js",
+            "line": 22,
+            "description": "Method that will be invoked by the mojit controller to obtain data.",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "The callback function to call when the\n       data has been retrieved.",
+                    "type": "Function(err,data)"
+                }
+            ],
+            "class": "testingModelFoo",
+            "module": "testing"
+        },
+        {
+            "file": "/MyHome/repos/personal/trib/src/trib/mojits/testing/controller.server.js",
+            "line": 18,
+            "description": "Method corresponding to the 'index' action.",
+            "params": [
+                {
+                    "name": "ac",
+                    "description": "The ActionContext that provides access\n       to the Mojito API.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Controller",
+            "module": "testing"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nMethod that will be invoked by the mojit controller to obtain data.",
+            "line": " /MyHome/repos/personal/trib/src/trib/mojits/Weather/models/foo.server.js:22"
+        },
+        {
+            "message": "Missing item type\nMethod corresponding to the 'index' action.",
+            "line": " /MyHome/repos/personal/trib/src/trib/mojits/Weather/controller.server.js:18"
+        },
+        {
+            "message": "Missing item type\nMethod that will be invoked by the mojit controller to obtain data.",
+            "line": " /MyHome/repos/personal/trib/src/trib/mojits/testing/models/foo.server.js:22"
+        },
+        {
+            "message": "Missing item type\nMethod corresponding to the 'index' action.",
+            "line": " /MyHome/repos/personal/trib/src/trib/mojits/testing/controller.server.js:18"
+        }
+    ]
+}
